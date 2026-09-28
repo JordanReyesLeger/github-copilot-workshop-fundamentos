@@ -1352,26 +1352,26 @@ Esta es la parte que convierte a Copilot de "un autocompletado muy bueno" en **i
 Antes de crear nada, ubica las piezas. Todas conviven y **se acumulan**.
 
 ```
-                    ┌──────────────────────────────────┐
-     Más amplio     │  1. copilot-instructions.md      │  Reglas para TODO el repo
+                    ┌────────────────────────────────────┐
+     Más amplio     │  1. copilot-instructions.md        │  Reglas para TODO el repo
           ▲         │     .github/copilot-instructions.md│
-          │         └──────────────────────────────────┘
-          │         ┌──────────────────────────────────┐
-          │         │  2. *.instructions.md            │  Reglas por tipo de archivo
-          │         │     .github/instructions/        │  (applyTo: '**/*.cs')
-          │         └──────────────────────────────────┘
-          │         ┌──────────────────────────────────┐
-          │         │  3. AGENTS.md                    │  Reglas compartidas entre
-          │         │     raíz del repositorio         │  distintas herramientas de IA
-          │         └──────────────────────────────────┘
-          │         ┌──────────────────────────────────┐
-          │         │  4. *.agent.md                   │  Un "personaje" con rol,
-          │         │     .github/agents/              │  herramientas y modelo propios
-          │         └──────────────────────────────────┘
-          ▼         ┌──────────────────────────────────┐
-     Más específico │  5. MCP servers                  │  Herramientas NUEVAS que
-                    │     .vscode/mcp.json             │  Copilot no tenía
-                    └──────────────────────────────────┘
+          │         └────────────────────────────────────┘
+          │         ┌────────────────────────────────────┐
+          │         │  2. *.instructions.md              │  Reglas por tipo de archivo
+          │         │     .github/instructions/          │  (applyTo: '**/*.cs')
+          │         └────────────────────────────────────┘
+          │         ┌────────────────────────────────────┐
+          │         │  3. AGENTS.md                      │  Reglas compartidas entre
+          │         │     raíz del repositorio           │  distintas herramientas de IA
+          │         └────────────────────────────────────┘
+          │         ┌────────────────────────────────────┐
+          │         │  4. *.agent.md                     │  Un "personaje" con rol,
+          │         │     .github/agents/                │  herramientas y modelo propios
+          │         └────────────────────────────────────┘
+          ▼         ┌────────────────────────────────────┐
+     Más específico │  5. MCP servers                    │  Herramientas NUEVAS que
+                    │     .vscode/mcp.json               │  Copilot no tenía
+                    └────────────────────────────────────┘
 ```
 
 | Nivel | Archivo | Cuándo usarlo |
