@@ -1,33 +1,83 @@
-# 🚲 Workshop: GitHub Copilot para Contoso Biker
+<div align="center">
 
-## Desarrollo asistido por IA con C# y ASP.NET Core
+# 🚲 Contoso Biker
 
-![GitHub Copilot](https://img.shields.io/badge/GitHub%20Copilot-Habilitado-brightgreen)
-![.NET](https://img.shields.io/badge/.NET-10%20LTS-512BD4)
-![C#](https://img.shields.io/badge/C%23-14-239120)
-![OpenAPI](https://img.shields.io/badge/OpenAPI-3.1-6BA539)
-![Pruebas](https://img.shields.io/badge/Pruebas-xUnit-orange)
-![Duración](https://img.shields.io/badge/Duración-3%20horas-red)
-![Idioma](https://img.shields.io/badge/Idioma-Español-yellow)
+### Workshop de GitHub Copilot
+#### Desarrollo asistido por IA con C# y ASP.NET Core
+
+<p>
+  <img alt="GitHub Copilot" src="https://img.shields.io/badge/GitHub_Copilot-Habilitado-22C55E?style=for-the-badge&logo=githubcopilot&logoColor=white" />
+  <img alt=".NET 10" src="https://img.shields.io/badge/.NET_10-LTS-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" />
+  <img alt="C# 14" src="https://img.shields.io/badge/C%23-14-239120?style=for-the-badge&logo=csharp&logoColor=white" />
+  <img alt="OpenAPI" src="https://img.shields.io/badge/OpenAPI-3.1-6BA539?style=for-the-badge&logo=openapiinitiative&logoColor=white" />
+</p>
+<p>
+  <img alt="VS Code" src="https://img.shields.io/badge/VS_Code-Requerido-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" />
+  <img alt="Duración" src="https://img.shields.io/badge/Duración-3_horas-EF4444?style=for-the-badge&logo=clockify&logoColor=white" />
+  <img alt="Nivel" src="https://img.shields.io/badge/Nivel-Fundamentos-F59E0B?style=for-the-badge&logo=academia&logoColor=white" />
+  <img alt="Idioma" src="https://img.shields.io/badge/Idioma-Español-FACC15?style=for-the-badge" />
+</p>
+
+<br/>
+
+**Construye una aplicación completa dirigiendo a GitHub Copilot.**
+**4 ejercicios prácticos · 3 horas · 100 % en español.**
+
+<br/>
+
+<a href="#-ejercicio-1-api-rest-con-copilot-45-min"><img alt="Empezar" src="https://img.shields.io/badge/▶%20EMPEZAR%20EL%20TALLER-1B4332?style=for-the-badge" /></a>
+&nbsp;
+<a href="#️-pre-requisitos"><img alt="Pre-requisitos" src="https://img.shields.io/badge/⚙%20PRE--REQUISITOS-40916C?style=for-the-badge" /></a>
+&nbsp;
+<a href="#-referencia-rápida"><img alt="Referencia" src="https://img.shields.io/badge/📖%20REFERENCIA%20RÁPIDA-74C69D?style=for-the-badge" /></a>
+
+</div>
 
 ---
 
 ## 📋 Tabla de contenidos
 
-- [🎯 Introducción](#-introducción)
-- [🧠 Conceptos clave de GitHub Copilot](#-conceptos-clave-de-github-copilot)
-- [🛠️ Pre-requisitos](#️-pre-requisitos)
-- [📅 Agenda del workshop](#-agenda-del-workshop)
-- [🔬 Ejercicio 1: API REST con Copilot](#-ejercicio-1-api-rest-con-copilot-45-min)
-- [🔬 Ejercicio 2: Frontend e integración](#-ejercicio-2-frontend-e-integración-30-min)
-- [🔬 Ejercicio 3: Pruebas y refactoring](#-ejercicio-3-pruebas-y-refactoring-25-min)
-- [🤖 Ejercicio 4: Creación de agentes](#-ejercicio-4-creación-de-agentes-35-min)
-- [📖 Referencia rápida](#-referencia-rápida)
-- [🆘 ¿Te quedaste atrás?](#-te-quedaste-atrás)
-- [✅ Checklist final](#-checklist-final)
-- [🙋 Preguntas frecuentes](#-preguntas-frecuentes)
-- [📚 Recursos adicionales](#-recursos-adicionales)
-- [👥 Créditos](#-créditos)
+<table>
+<tr>
+<td width="33%" valign="top">
+
+**🚀 Antes de empezar**
+
+| | |
+|:--|:--|
+| 🎯 | [Introducción](#-introducción) |
+| 🧠 | [Conceptos clave](#-conceptos-clave-de-github-copilot) |
+| 🛠️ | [Pre-requisitos](#️-pre-requisitos) |
+| 📅 | [Agenda](#-agenda-del-workshop) |
+
+</td>
+<td width="33%" valign="top">
+
+**🔬 Ejercicios prácticos**
+
+| | |
+|:--|:--|
+| 1️⃣ | [API REST con Copilot](#-ejercicio-1-api-rest-con-copilot-45-min) |
+| 2️⃣ | [Frontend e integración](#-ejercicio-2-frontend-e-integración-30-min) |
+| 3️⃣ | [Pruebas y refactoring](#-ejercicio-3-pruebas-y-refactoring-25-min) |
+| 4️⃣ | [**Creación de agentes**](#-ejercicio-4-creación-de-agentes-35-min) ⭐ |
+
+</td>
+<td width="33%" valign="top">
+
+**📚 Apoyo y consulta**
+
+| | |
+|:--|:--|
+| 📖 | [Referencia rápida](#-referencia-rápida) |
+| 🆘 | [¿Te quedaste atrás?](#-te-quedaste-atrás) |
+| ✅ | [Checklist final](#-checklist-final) |
+| 🙋 | [Preguntas frecuentes](#-preguntas-frecuentes) |
+| 📚 | [Recursos adicionales](#-recursos-adicionales) |
+
+</td>
+</tr>
+</table>
 
 ---
 
@@ -45,7 +95,8 @@ Al terminar sabrás:
 - ✅ Usar Copilot Chat para explicar, corregir y refactorizar código existente
 - ✅ **Configurar y crear tus propios agentes personalizados** para que Copilot trabaje como tu equipo necesita
 
-> 💡 La complejidad del negocio es **deliberadamente baja**. El objetivo no es entregar un sistema de producción, sino ver con claridad **cómo Copilot acelera cada fase del desarrollo**.
+> [!TIP]
+> La complejidad del negocio es **deliberadamente baja**. El objetivo no es entregar un sistema de producción, sino ver con claridad **cómo Copilot acelera cada fase del desarrollo**.
 
 ### Estándares del proyecto
 
@@ -71,71 +122,86 @@ Al terminar sabrás:
 
 Las tres entidades se relacionan así:
 
-```
-Cliente  1 ──────< N  Bicicleta        (una bicicleta rentada pertenece a un cliente)
-Cliente  1 ──────< N  Renta
-Bicicleta 1 ─────< N  Renta            (historial de movimientos de cada bicicleta)
+```mermaid
+erDiagram
+    CLIENTE ||--o{ BICICLETA : "tiene rentada"
+    CLIENTE ||--o{ RENTA : "realiza"
+    BICICLETA ||--o{ RENTA : "registra su historial"
+
+    CLIENTE {
+        int Id PK
+        string Nombre
+        string Email UK
+        string Telefono
+        string Ciudad
+    }
+    BICICLETA {
+        int Id PK
+        string Codigo UK
+        string Modelo
+        string Tipo "montaña, ruta, urbana, eléctrica"
+        decimal PrecioPorDia
+        string Estado "disponible, rentada, mantenimiento"
+        int ClienteId FK "null si está libre"
+    }
+    RENTA {
+        int Id PK
+        int BicicletaId FK
+        int ClienteId FK
+        string Tipo "inicio, devolucion, extension"
+        int Dias
+        decimal Monto "lo calcula la API"
+    }
 ```
 
-> 📝 **Sobre las rentas:** los ejercicios guiados cubren **Clientes** y **Bicicletas**. Las **Rentas** son un desafío opcional al final del Ejercicio 1, pensado para quien avance rápido. Si no llegas, no pasa nada: el valor del workshop está en el proceso, no en completar todo el código.
+> [!NOTE]
+> **Sobre las rentas:** los ejercicios guiados cubren **Clientes** y **Bicicletas**. Las **Rentas** son un desafío opcional al final del Ejercicio 1, pensado para quien avance rápido. Si no llegas, no pasa nada: el valor del workshop está en el proceso, no en completar todo el código.
 
 ### Arquitectura de la solución
 
-```
-┌──────────────────────────────────────────────────────────────────┐
-│                          NAVEGADOR WEB                           │
-│                                                                  │
-│  ┌──────────────────────┐      ┌──────────────────────────────┐  │
-│  │  Panel de Contoso    │      │   Referencia de la API       │  │
-│  │  Biker               │      │   (Scalar, generada sola)    │  │
-│  │                      │      │                              │  │
-│  │  Bootstrap 5 (CDN)   │      │   GET  /scalar               │  │
-│  │  JavaScript vanilla  │      │   GET  /openapi/v1.json      │  │
-│  │  fetch() → /api/...  │      │                              │  │
-│  │                      │      │                              │  │
-│  │  GET /               │      │                              │  │
-│  └──────────┬───────────┘      └──────────────┬───────────────┘  │
-│             │                                 │                  │
-└─────────────┼─────────────────────────────────┼──────────────────┘
-              │      HTTP (mismo origen)        │
-              ▼                                 ▼
-┌──────────────────────────────────────────────────────────────────┐
-│                  ContosoBiker.Api  (ASP.NET Core)                │
-│                                                                  │
-│  ┌────────────────────────┐  ┌────────────────────────────────┐  │
-│  │  Archivos estáticos    │  │      Minimal APIs              │  │
-│  │                        │  │                                │  │
-│  │  UseDefaultFiles()     │  │  /api/clientes    → CRUD       │  │
-│  │  UseStaticFiles()      │  │  /api/bicicletas  → CRUD       │  │
-│  │                        │  │  /api/rentas      → CRUD  (*)  │  │
-│  │  wwwroot/index.html    │  │  /api/estadisticas → resumen   │  │
-│  └────────────────────────┘  └───────────────┬────────────────┘  │
-│                                              │                   │
-│                                              ▼                   │
-│                        ┌──────────────────────────────────────┐  │
-│                        │  Servicios (Singleton, en memoria)   │  │
-│                        │                                      │  │
-│                        │   Servicios/ClienteServicio.cs       │  │
-│                        │   Servicios/BicicletaServicio.cs     │  │
-│                        │   Servicios/RentaServicio.cs    (*)  │  │
-│                        │                                      │  │
-│                        │  Modelos (con DataAnnotations)       │  │
-│                        │   Modelos/Cliente.cs                 │  │
-│                        │   Modelos/Bicicleta.cs               │  │
-│                        │   Modelos/Renta.cs              (*)  │  │
-│                        └──────────────────────────────────────┘  │
-└──────────────────────────────────────────────────────────────────┘
-                                   ▲
-                                   │ WebApplicationFactory<Program>
-┌──────────────────────────────────┴───────────────────────────────┐
-│                      ContosoBiker.Tests  (xUnit)                 │
-│   ClienteServicioTests.cs   → pruebas unitarias                  │
-│   BicicletaServicioTests.cs → pruebas unitarias                  │
-│   ApiIntegracionTests.cs    → pruebas de integración HTTP        │
-└──────────────────────────────────────────────────────────────────┘
+```mermaid
+flowchart TB
+    subgraph BROWSER["🌐 NAVEGADOR WEB"]
+        UI["🖥️ <b>Panel de administración</b><br/>Bootstrap 5 por CDN<br/>JavaScript vanilla + fetch()"]
+        DOCS["📘 <b>Referencia de la API</b><br/>Scalar, generada sola"]
+    end
 
-(*) Rentas es el desafío opcional del Paso 1.8
+    subgraph APP["⚙️ ContosoBiker.Api · ASP.NET Core 10"]
+        STATIC["📁 <b>Archivos estáticos</b><br/>UseDefaultFiles() → UseStaticFiles()<br/>wwwroot/index.html"]
+        ENDPOINTS["🔀 <b>Minimal APIs</b><br/>/api/clientes · /api/bicicletas<br/>/api/rentas ⭐ · /api/estadisticas"]
+        VALID{{"🛡️ <b>Validación automática</b><br/>DataAnnotations → 400"}}
+        SERVICES["💾 <b>Servicios · Singleton en memoria</b><br/>ClienteServicio · BicicletaServicio<br/>RentaServicio ⭐"]
+        MODELS["📋 <b>Modelos</b><br/>Cliente · Bicicleta · Renta ⭐"]
+    end
+
+    subgraph TESTS["🧪 ContosoBiker.Tests · xUnit"]
+        INTEG["ApiIntegracionTests<br/><i>WebApplicationFactory</i>"]
+        UNIT["ClienteServicioTests<br/>BicicletaServicioTests"]
+    end
+
+    UI -->|"GET /"| STATIC
+    UI -->|"fetch('/api/...')"| ENDPOINTS
+    DOCS -->|"GET /openapi/v1.json"| ENDPOINTS
+    ENDPOINTS --> VALID
+    VALID --> SERVICES
+    SERVICES --> MODELS
+    INTEG -.->|"HTTP real en memoria"| ENDPOINTS
+    UNIT -.->|"llamada directa"| SERVICES
+
+    classDef navegador fill:#D8F3DC,stroke:#40916C,stroke-width:2px,color:#1B4332
+    classDef servidor fill:#B7E4C7,stroke:#2D6A4F,stroke-width:2px,color:#1B4332
+    classDef datos fill:#95D5B2,stroke:#1B4332,stroke-width:2px,color:#1B4332
+    classDef pruebas fill:#FFE8CC,stroke:#F59E0B,stroke-width:2px,color:#7C2D12
+    classDef guardia fill:#FFD6D6,stroke:#EF4444,stroke-width:2px,color:#7F1D1D
+
+    class UI,DOCS navegador
+    class STATIC,ENDPOINTS servidor
+    class SERVICES,MODELS datos
+    class UNIT,INTEG pruebas
+    class VALID guardia
 ```
+
+> ⭐ = desafío bonus del Paso 1.8 (Rentas)
 
 **Cómo fluye una petición:**
 
@@ -196,6 +262,7 @@ Hazme la app de bicicletas
 | Restricciones | ¿Qué NO debe hacer? | "sin base de datos, todo en memoria" |
 | Tecnología | ¿Con qué se implementa? | "Minimal APIs de .NET 10" |
 
+> [!TIP]
 > 📚 ¿Quieres más ejemplos de la comunidad? Revisa [github/awesome-copilot](https://github.com/github/awesome-copilot): instrucciones, agentes y configuraciones reutilizables.
 
 ### Cómo darle contexto: las referencias `#`
@@ -211,75 +278,150 @@ Copilot no lee tu proyecto entero en cada mensaje. Las referencias `#` le dicen 
 | `#githubRepo` | Código de un repositorio público | `#githubRepo dotnet/aspnetcore busca ejemplos de MapGroup` |
 | `#terminalLastCommand` | La última salida de la terminal | `#terminalLastCommand ¿por qué falló?` |
 
-> ⚠️ **Si vienes de tutoriales viejos:** el participante `@workspace` ya no forma parte de la documentación actual de VS Code; su equivalente hoy es **`#codebase`**. Si ves `@workspace` en un material antiguo, tradúcelo mentalmente.
+> [!WARNING]
+> **Si vienes de tutoriales viejos:** el participante `@workspace` ya no forma parte de la documentación actual de VS Code; su equivalente hoy es **`#codebase`**. Si ves `@workspace` en un material antiguo, tradúcelo mentalmente.
 
-> 💡 En modo agente no necesitas nombrar cada herramienta: el agente decide sola cuáles usar. Las referencias `#` siguen siendo útiles cuando quieres **forzar** una fuente concreta.
+> [!TIP]
+> Con el rol Agent no necesitas nombrar cada herramienta: el agente decide sola cuáles usar. Las referencias `#` siguen siendo útiles cuando quieres **forzar** una fuente concreta.
 
-### Los modos de Copilot Chat
+### Cómo se configura una sesión de chat
 
-> ⚠️ **Nota honesta:** la interfaz de Copilot cambia con frecuencia (nombres, íconos, ubicación del selector). Si lo que ves no coincide exactamente con lo descrito aquí, el **concepto** sigue siendo válido: consulta con la persona que imparte el taller o revisa la [documentación oficial](https://code.visualstudio.com/docs/copilot/overview).
+Aquí está el cambio más importante de los últimos meses, y el que más confusión genera: **el campo de chat ya no tiene un solo selector de "modo"**. Hoy tiene **cinco controles independientes**, y el rol del agente es solo uno de ellos.
 
-#### 1️⃣ Modo Ask (preguntar) 💬
+```mermaid
+flowchart LR
+    ST["🎯 <b>Session Target</b><br/>Dónde corre la sesión<br/><i>Local · Copilot · Cloud</i>"]
+    AG["🤖 <b>Agent</b><br/>Qué rol adopta<br/><i>Ask · Agent · Plan · Autopilot</i>"]
+    LM["🧠 <b>Language model</b><br/>Con qué modelo razona<br/><i>Auto · GPT · Claude…</i>"]
+    PE["🔐 <b>Permissions</b><br/>Qué requiere tu OK<br/><i>Manual · Assisted · Allow all</i>"]
+    CI["📂 <b>Code isolation</b><br/>Dónde escribe<br/><i>Carpeta · worktree Git</i>"]
+
+    ST --> AG --> LM --> PE --> CI
+
+    classDef c1 fill:#D8F3DC,stroke:#40916C,stroke-width:2px,color:#1B4332
+    classDef c2 fill:#B7E4C7,stroke:#2D6A4F,stroke-width:3px,color:#1B4332
+    classDef c3 fill:#95D5B2,stroke:#2D6A4F,stroke-width:2px,color:#1B4332
+    classDef c4 fill:#FFE8CC,stroke:#F59E0B,stroke-width:2px,color:#7C2D12
+    classDef c5 fill:#E9ECEF,stroke:#ADB5BD,stroke-width:2px,color:#495057
+
+    class ST c1
+    class AG c2
+    class LM c3
+    class PE c4
+    class CI c5
+```
+
+> [!IMPORTANT]
+> 🔑 **La idea que lo aclara todo:** los roles que ves disponibles **dependen del Session Target que elegiste**. No son una lista fija.
+>
+> | Session Target | Roles que suele ofrecer |
+> |----------------|-------------------------|
+> | **Local** | Ask · Agent · Plan |
+> | **Copilot** (Agent Host) | Agent · Plan · **Autopilot** |
+>
+> Por eso mucha gente dice *"a mí ya no me aparece Ask"*: **no fue eliminado**, simplemente no lo ofrece el target que tienen seleccionado. Si lo necesitas, cambia el Session Target a **Local**.
+
+---
+
+### Los roles del agente
+
+> [!WARNING]
+> **Nota honesta:** la interfaz de Copilot cambia muy rápido (nombres, íconos, ubicación de los selectores). Si lo que ves no coincide con lo descrito aquí, el **concepto** sigue siendo válido. Consulta con quien imparte el taller o revisa la [documentación oficial](https://code.visualstudio.com/docs/agents/run/agent-harnesses).
+
+#### 1️⃣ Ask · preguntar 💬
 
 | Aspecto | Detalle |
 |---------|---------|
-| Qué hace | Responde preguntas. **No toca tus archivos.** |
+| Qué hace | Responde preguntas y orienta. **No toca tus archivos.** |
 | Cuándo usarlo | Explorar, entender, comparar opciones, aprender |
-| Riesgo | Ninguno |
+| Riesgo | 🟢 Ninguno |
+| Disponibilidad | Session Target **Local** |
 
-```
-[Modo Ask]
+```text
+[Ask]
 "¿Cuál es la diferencia entre Minimal APIs y controladores en ASP.NET Core?"
 
 → Copilot EXPLICA. No crea nada.
 ```
 
-#### 2️⃣ Modo Agent (agente) 🤖
+#### 2️⃣ Plan · planificar 📋
 
 | Aspecto | Detalle |
 |---------|---------|
-| Qué hace | Crea y modifica archivos, ejecuta comandos, itera si algo falla |
-| Cuándo usarlo | Implementar, generar, refactorizar, correr pruebas |
-| Riesgo | Medio — revisa siempre el diff antes de aceptar |
+| Qué hace | Investiga el proyecto y propone un plan **antes** de tocar nada |
+| Cuándo usarlo | Tareas grandes que cruzan varios archivos |
+| Riesgo | 🟢 Bajo — revisas y apruebas el plan |
+| Disponibilidad | Local y Copilot · también con `/plan` |
 
+```text
+[Plan]
+"Implementa la funcionalidad completa de rentas: modelo, servicio,
+endpoints y pruebas"
+
+→ Copilot PROPONE un plan revisable:
+  1. Modelos/Renta.cs con validaciones
+  2. Servicios/RentaServicio.cs con datos de ejemplo
+  3. Endpoints/RentasEndpoints.cs registrado en Program.cs
+  4. Pruebas de integración del flujo inicio → devolución
+
+→ Puedes editarlo y comentarlo antes de aprobar la implementación.
 ```
-[Modo Agent]
+
+#### 3️⃣ Agent · implementar 🤖
+
+| Aspecto | Detalle |
+|---------|---------|
+| Qué hace | Crea y modifica archivos, ejecuta comandos e itera si algo falla |
+| Cuándo usarlo | Implementar, generar, refactorizar, correr pruebas |
+| Riesgo | 🟡 Medio — revisa siempre el diff |
+| Disponibilidad | Local y Copilot |
+
+```text
+[Agent]
 "Crea el modelo Bicicleta para Contoso Biker con validaciones de DataAnnotations"
 
 → Copilot CREA el archivo con el código completo.
 ```
 
-#### 3️⃣ Modo Plan (planificar) 📋
+> [!NOTE]
+> 🎓 **Este es el rol que más usarás en el taller.** Cuando más adelante leas *"PROMPT en rol Agent"*, se refiere a este.
+
+#### 4️⃣ Autopilot · delegar 🚀
 
 | Aspecto | Detalle |
 |---------|---------|
-| Qué hace | Investiga y propone un plan **antes** de tocar nada |
-| Cuándo usarlo | Tareas grandes que cruzan varios archivos |
-| Riesgo | Bajo — tú apruebas el plan |
+| Qué hace | Trabaja de forma autónoma hasta dar la tarea por terminada: **auto-aprueba todas las herramientas**, reintenta ante errores y responde solo a las preguntas que lo bloquearían |
+| Cuándo usarlo | Tareas largas y bien acotadas, en un entorno de confianza |
+| Riesgo | 🔴 Alto — no pide confirmación antes de editar o ejecutar |
+| Disponibilidad | Session Target **Copilot** (Agent Host) |
 
-```
-[Modo Plan]
-"Implementa la funcionalidad completa de rentas: modelo, servicio,
-endpoints y pruebas"
-
-→ Copilot PROPONE:
-  1. Modelos/Renta.cs con validaciones
-  2. Servicios/RentaServicio.cs con datos de ejemplo
-  3. Endpoints/RentasEndpoints.cs registrado en Program.cs
-  4. Pruebas de integración para el flujo inicio → devolución
-
-→ Tú revisas y apruebas antes de que se ejecute.
-```
+> [!CAUTION]
+> 🛡️ **Autopilot omite las confirmaciones**, incluidas acciones potencialmente destructivas: edición de archivos, comandos de terminal y llamadas a herramientas externas. La primera vez que lo actives, VS Code te mostrará un aviso pidiendo confirmación.
+>
+> **Para este taller usa Agent, no Autopilot.** El valor pedagógico está precisamente en *ver* lo que Copilot propone antes de aceptarlo.
 
 #### Comparativa
 
-| Característica | Ask 💬 | Agent 🤖 | Plan 📋 |
-|----------------|--------|----------|---------|
-| Modifica archivos | ❌ No | ✅ Sí | ✅ Sí, tras aprobación |
-| Ejecuta comandos | ❌ No | ✅ Sí | ✅ Sí, tras aprobación |
-| Velocidad | Alta | Alta | Menor |
-| Control que tienes | N/A | Medio | Alto |
-| Ideal para | Aprender | Implementar | Tareas complejas |
+| Característica | Ask 💬 | Plan 📋 | Agent 🤖 | Autopilot 🚀 |
+|----------------|:------:|:-------:|:--------:|:------------:|
+| Modifica archivos | ❌ No | ⏸️ Tras aprobar | ✅ Sí | ✅ Sí |
+| Ejecuta comandos | ❌ No | ⏸️ Tras aprobar | ✅ Sí | ✅ Sí |
+| Pide confirmación | — | ✅ Siempre | ⚙️ Según permisos | ❌ Nunca |
+| Control que tienes | 🟢 Total | 🟢 Alto | 🟡 Medio | 🔴 Bajo |
+| Ideal para | Aprender | Tareas complejas | Implementar | Delegar |
+
+### Los niveles de permiso
+
+El rol dice **qué hace** el agente; los permisos dicen **qué necesita tu visto bueno**. Son controles distintos.
+
+| Nivel | Qué significa | Recomendación para el taller |
+|-------|---------------|------------------------------|
+| 🟢 **Manual permissions** | Usa tu configuración de aprobaciones; lo que no esté auto-aprobado te lo pregunta | ✅ **Úsalo** (es el valor por defecto) |
+| 🟡 **Assisted permissions** | Un modelo evalúa cada llamada a herramienta y solo te consulta las dudosas | Experimental |
+| 🔴 **Allow all** | Ejecuta todo sin preguntar | ⚠️ Evítalo durante el taller |
+
+> [!WARNING]
+> Incluso con **Manual permissions**, el agente **no te pregunta por cada edición de archivo**. Por eso la disciplina de **revisar el diff** antes de confirmar es parte del oficio, no un extra.
 
 ### Comandos especiales (`/`)
 
@@ -296,7 +438,8 @@ Escribe `/` en el chat para ver los disponibles. Los que usaremos:
 | `/agents` | Abre la configuración de agentes | `/agents` |
 | `/create-agent` | Genera un agente personalizado | `/create-agent` |
 
-> 💡 La disponibilidad de cada comando depende de la superficie de chat y del modo activo. Si uno no aparece, no está roto: no aplica a ese contexto.
+> [!TIP]
+> La disponibilidad de cada comando depende de la superficie de chat y del modo activo. Si uno no aparece, no está roto: no aplica a ese contexto.
 
 ### Qué hace bien y qué hace mal
 
@@ -310,6 +453,7 @@ Saber esto te ahorra la mitad de la frustración:
 | Traducir entre lenguajes y frameworks | APIs muy nuevas o muy de nicho |
 | Explicar código ajeno | Garantizar que no inventó una función |
 
+> [!IMPORTANT]
 > 🧭 **Regla de oro del taller:** Copilot propone, **tú dispones**. Nunca aceptes código que no puedas explicar.
 
 ---
@@ -328,9 +472,11 @@ git --version      # Git
 
 Si `dotnet --version` no muestra una versión 10.x, descarga el SDK desde [dotnet.microsoft.com/download](https://dotnet.microsoft.com/download/dotnet/10.0).
 
-> 📝 **Por qué .NET 10:** es la versión **LTS** vigente, con soporte hasta noviembre de 2028. Todo el material de este taller está probado contra el SDK `10.0.4xx`.
+> [!NOTE]
+> **Por qué .NET 10:** es la versión **LTS** vigente, con soporte hasta noviembre de 2028. Todo el material de este taller está probado contra el SDK `10.0.4xx`.
 
-> 📝 **Sin base de datos:** el taller guarda todo en diccionarios en memoria. Los datos se pierden al reiniciar la aplicación, pero se recargan datos de ejemplo automáticamente. Así nadie pierde media hora instalando SQL Server.
+> [!NOTE]
+> **Sin base de datos:** el taller guarda todo en diccionarios en memoria. Los datos se pierden al reiniciar la aplicación, pero se recargan datos de ejemplo automáticamente. Así nadie pierde media hora instalando SQL Server.
 
 ### Extensiones de VS Code
 
@@ -355,7 +501,7 @@ El taller usa CDN para Bootstrap y NuGet para los paquetes. Necesitas internet.
 | Hora | Bloque | Actividad | Modo de Copilot |
 |------|--------|-----------|-----------------|
 | 0:00 – 0:15 | Bienvenida | Setup, verificación del entorno e introducción | — |
-| 0:15 – 1:00 | **Ejercicio 1** | API REST con Minimal APIs + OpenAPI | Ask → Agent |
+| 0:15 – 1:00 | **Ejercicio 1** | API REST con Minimal APIs + OpenAPI | 💬 Ask → 🤖 Agent |
 | 1:00 – 1:10 | ☕ Descanso | Pausa y preguntas rápidas | — |
 | 1:10 – 1:40 | **Ejercicio 2** | Frontend en `wwwroot` e integración | Agent |
 | 1:40 – 2:05 | **Ejercicio 3** | Pruebas unitarias y de integración, refactoring | Agent + `/tests` |
@@ -363,8 +509,10 @@ El taller usa CDN para Bootstrap y NuGet para los paquetes. Necesitas internet.
 | 2:15 – 2:50 | **Ejercicio 4** | Personalización y creación de agentes | Agent + `/create-agent` |
 | 2:50 – 3:00 | Cierre | Recapitulación, tips avanzados y recursos | — |
 
+> [!NOTE]
 > ⏱️ Los tiempos son orientativos. Ajusta al ritmo del grupo, pero **no excedas las 3 horas**: la atención cae en picado.
 
+> [!NOTE]
 > 🎓 **Para quien imparte:** si el setup inicial se alarga por problemas de instalación, recorta el Ejercicio 3 a los Pasos 3.1–3.4 (generar y ejecutar pruebas) y omite el refactoring. Lo imprescindible es que todo el mundo complete los Ejercicios 1, 2 y 4. **El Ejercicio 4 es el diferenciador del taller: no lo sacrifiques.**
 
 ---
@@ -377,19 +525,28 @@ El taller usa CDN para Bootstrap y NuGet para los paquetes. Necesitas internet.
 - ✅ Crear la estructura de la solución con el CLI de .NET
 - ✅ Implementar una API REST con Minimal APIs
 - ✅ Obtener documentación OpenAPI navegable sin escribirla
-- ✅ Experimentar con autocompletado y con el modo agente
+- ✅ Experimentar con el autocompletado y con el rol Agent
 
 ---
 
-### Paso 1.1 · Explorar con el modo Ask 🔍
+### Paso 1.1 · Explorar antes de construir 🔍
 
-> 💡 **Importante:** asegúrate de estar en **modo Ask** 💬. Este modo no toca tus archivos: solo responde.
+> [!IMPORTANT]
+> 🎯 **Objetivo de este paso:** pensar antes de teclear. Queremos que Copilot **explique**, no que cree archivos todavía.
 
-📍 **Cómo activarlo:**
+📍 **Cómo prepararte:**
 
 1. Abre Copilot Chat con `Ctrl+Alt+I`
-2. Busca el selector de modo en la parte superior del panel
-3. Elige **Ask**
+2. En los selectores del campo de chat, elige el rol **Ask** 💬
+3. Escribe el prompt
+
+> [!NOTE]
+> **¿No te aparece "Ask" en la lista?** Es normal y no está roto: ese rol lo ofrece el Session Target **Local**. Tienes dos salidas, ambas válidas:
+>
+> - Cambia el **Session Target** a **Local** y selecciona **Ask**.
+> - O quédate donde estás y usa **Plan** 📋, que también investiga y responde sin escribir código.
+>
+> En el peor de los casos, usa **Agent** y empieza tu prompt con *"Solo respóndeme, no crees ni modifiques archivos todavía."*
 
 🤖 **PROMPT — copia y pega en Copilot Chat:**
 
@@ -416,17 +573,20 @@ Ayúdame a entender, sin escribir código todavía:
 
 📝 **Observa:** Copilot responde con detalle pero **no crea ningún archivo**. Este es el modo para pensar antes de teclear.
 
+> [!IMPORTANT]
 > 🌟 **Momento wow:** fíjate en que entiende el dominio de renta de bicicletas y propone una arquitectura coherente sin que le hayas dado detalles técnicos. El punto 4 además revela un cambio real de la plataforma que mucha documentación vieja todavía no refleja.
 
 ---
 
 ### Paso 1.2 · Configurar las instrucciones del proyecto
 
-> 💡 **¿Por qué ahora y no después?** El archivo `.github/copilot-instructions.md` define las reglas que Copilot aplicará a **todo** lo que genere de aquí en adelante. Si lo creas antes de escribir la primera línea, los modelos, la API, el frontend y las pruebas saldrán con las mismas convenciones. Si lo creas al final, ya no sirve de nada.
+> [!TIP]
+> **¿Por qué ahora y no después?** El archivo `.github/copilot-instructions.md` define las reglas que Copilot aplicará a **todo** lo que genere de aquí en adelante. Si lo creas antes de escribir la primera línea, los modelos, la API, el frontend y las pruebas saldrán con las mismas convenciones. Si lo creas al final, ya no sirve de nada.
 
-> 💡 **Cambia a modo Agent** 🤖. Este modo sí puede crear archivos.
+> [!TIP]
+> **Cambia al rol Agent** 🤖. Este sí puede crear y modificar archivos.
 
-🤖 **PROMPT en modo Agent:**
+🤖 **PROMPT en rol Agent:**
 
 ````
 Crea el archivo .github/copilot-instructions.md con exactamente este contenido:
@@ -476,13 +636,14 @@ administración. Los datos viven en memoria: no hay base de datos.
 
 ✅ **Verifica:** el archivo debe existir en `.github/copilot-instructions.md`. Ábrelo y léelo — es el "contrato" del resto del taller.
 
+> [!IMPORTANT]
 > 🌟 **Momento wow:** en los pasos siguientes, cuando Copilot genere código en español, con `MapGroup` y con `WithSummary` **sin que se lo pidas explícitamente**, estarás viendo estas instrucciones en acción.
 
 ---
 
 ### Paso 1.3 · Crear la estructura de la solución
 
-🤖 **PROMPT en modo Agent:**
+🤖 **PROMPT en rol Agent:**
 
 ```
 Crea la estructura de la solución de Contoso Biker con el CLI de .NET.
@@ -533,7 +694,8 @@ contoso-biker/
     └── UnitTest1.cs
 ```
 
-> 📝 **Dos detalles que sorprenden:**
+> [!NOTE]
+> **Dos detalles que sorprenden:**
 > 1. **El archivo de solución es `.slnx`, no `.sln`.** Desde .NET 10, `dotnet new sln` genera el formato XML nuevo. Es normal y funciona igual.
 > 2. **`dotnet new webapi` genera Minimal APIs**, no controladores. Si alguna vez necesitas controladores, el flag es `--use-controllers`.
 
@@ -547,7 +709,8 @@ contoso-biker/
 <Project Sdk="Microsoft.NET.Sdk.Web">
 ```
 
-> ⚠️ **Por qué importa:** `Microsoft.AspNetCore.Mvc.Testing` exige que el proyecto de pruebas use el SDK **Web**. Si no haces este cambio, las pruebas de integración del Ejercicio 3 fallarán con errores de dependencias que cuesta mucho diagnosticar. Pídeselo a Copilot así si prefieres:
+> [!WARNING]
+> **Por qué importa:** `Microsoft.AspNetCore.Mvc.Testing` exige que el proyecto de pruebas use el SDK **Web**. Si no haces este cambio, las pruebas de integración del Ejercicio 3 fallarán con errores de dependencias que cuesta mucho diagnosticar. Pídeselo a Copilot así si prefieres:
 >
 > ```
 > En ContosoBiker.Tests.csproj, cambia el SDK de Microsoft.NET.Sdk a
@@ -562,7 +725,7 @@ También puedes borrar `ContosoBiker.Tests/UnitTest1.cs`: lo reemplazaremos en e
 
 Aquí empieza lo interesante. Vamos a pedir el código describiendo **intención y reglas de negocio**, no la sintaxis.
 
-🤖 **PROMPT en modo Agent:**
+🤖 **PROMPT en rol Agent:**
 
 ```
 Crea ContosoBiker.Api/Modelos/Cliente.cs con el modelo de los ciclistas
@@ -588,8 +751,10 @@ Documenta la clase y cada propiedad con comentarios XML en español.
 - ¿Los mensajes de error están en español y son entendibles para un usuario final?
 - ¿El `namespace` es `ContosoBiker.Api.Modelos`?
 
-> 💡 **Si generó el código en inglés**, añade al prompt: *"Sigue las instrucciones de `.github/copilot-instructions.md`."* Es el recordatorio más útil del taller.
+> [!TIP]
+> **Si generó el código en inglés**, añade al prompt: *"Sigue las instrucciones de `.github/copilot-instructions.md`."* Es el recordatorio más útil del taller.
 
+> [!NOTE]
 > 🎓 **Concepto — por qué DataAnnotations y no `if`:** en .NET 10 la validación de Minimal APIs es automática. Basta con anotar el modelo y activar el servicio (lo haremos en el Paso 1.6) para que cualquier petición inválida reciba un `400` con el detalle de los errores **sin que tú escribas una sola línea de validación** en el endpoint.
 
 ---
@@ -598,7 +763,7 @@ Documenta la clase y cada propiedad con comentarios XML en español.
 
 Ahora le pediremos que **repita un patrón que ya existe**. Esta es una de las cosas que Copilot hace mejor.
 
-🤖 **PROMPT en modo Agent:**
+🤖 **PROMPT en rol Agent:**
 
 ```
 #file:ContosoBiker.Api/Modelos/Cliente.cs
@@ -623,7 +788,7 @@ para poder reutilizarlos desde las pruebas.
 
 Después, los dos almacenes de datos:
 
-🤖 **PROMPT en modo Agent:**
+🤖 **PROMPT en rol Agent:**
 
 ```
 Crea los servicios de datos en memoria de Contoso Biker:
@@ -658,15 +823,17 @@ Documenta todo con comentarios XML en español.
 - ¿Los datos de ejemplo son coherentes? (¿la bicicleta rentada apunta a un cliente que existe?)
 - ¿`ExisteEmail` compara con `StringComparison.OrdinalIgnoreCase`?
 
+> [!IMPORTANT]
 > 🌟 **Momento wow:** al pasar `#file:` y decir "el mismo estilo", Copilot lee el archivo real y replica su estructura, su nivel de documentación y hasta su forma de nombrar. **Cada participante obtendrá un resultado ligeramente distinto** — compáralos con quien tengas al lado, es el mejor ejercicio de la sesión.
 
+> [!NOTE]
 > 🎓 **Concepto — `LiberarDeCliente` no es un capricho.** Es una regla de integridad: si borras un cliente, sus bicicletas no pueden quedar apuntando a un id que ya no existe. Copilot nunca habría inventado esta regla solo; la sabes tú, porque conoces el negocio. **Ese es tu trabajo en este taller.**
 
 ---
 
 ### Paso 1.6 · Los endpoints y la aplicación
 
-🤖 **PROMPT en modo Agent:**
+🤖 **PROMPT en rol Agent:**
 
 ```
 Crea los endpoints REST de Contoso Biker como métodos de extensión:
@@ -700,7 +867,7 @@ Los servicios se reciben por inyección de dependencias en cada handler.
 
 Y ahora el punto de entrada:
 
-🤖 **PROMPT en modo Agent:**
+🤖 **PROMPT en rol Agent:**
 
 ```
 Reescribe ContosoBiker.Api/Program.cs como la aplicación de Contoso Biker.
@@ -752,13 +919,14 @@ Finalmente, fija el puerto para que todas las personas del taller usen la misma 
 }
 ```
 
-> 💡 **Si la sugerencia de Copilot se quedó corta** —por ejemplo, olvidó `WithSummary` o no registró un servicio— no rehagas el prompt desde cero. Itera: *"Añade `WithSummary` y `Produces` a todos los endpoints de bicicletas"*. Iterar es la forma natural de trabajar con un agente, no una señal de que lo hiciste mal.
+> [!TIP]
+> **Si la sugerencia de Copilot se quedó corta** —por ejemplo, olvidó `WithSummary` o no registró un servicio— no rehagas el prompt desde cero. Itera: *"Añade `WithSummary` y `Produces` a todos los endpoints de bicicletas"*. Iterar es la forma natural de trabajar con un agente, no una señal de que lo hiciste mal.
 
 ---
 
 ### Paso 1.7 · Ejecutar y explorar la documentación
 
-🤖 **PROMPT en modo Agent:**
+🤖 **PROMPT en rol Agent:**
 
 ```
 Compila la solución y ejecuta la API de Contoso Biker con el perfil http.
@@ -801,15 +969,18 @@ dotnet run --launch-profile http
 
 Deberías recibir un **400** con los cuatro errores descritos en español.
 
+> [!IMPORTANT]
 > 🌟 **Momento wow:** no escribiste ni una línea de validación en los endpoints, ni una línea de documentación OpenAPI a mano. Las anotaciones del modelo y `WithSummary` hicieron todo el trabajo. **Esto es lo que significa "la plataforma trabaja para ti".**
 
+> [!NOTE]
 > 🎓 **Concepto — por qué ya no es Swagger:** hasta .NET 8, las plantillas incluían Swashbuckle. En .NET 9 se retiró (su mantenimiento comunitario se detuvo) y se sustituyó por `Microsoft.AspNetCore.OpenApi`, que **genera el documento pero no trae interfaz**. Por eso añadimos Scalar: es la capa visual sobre ese documento. Si ves tutoriales que hablan de `AddSwaggerGen()`, son anteriores a .NET 9.
 
 ---
 
 ### Paso 1.8 · Desafío bonus: las rentas ⭐
 
-> 📝 **Este paso es OPCIONAL.** Es para quien terminó antes de tiempo. Si el grupo va justo, quien imparte puede indicar que se salte y pasar al Ejercicio 2. No afecta a nada de lo que viene después.
+> [!NOTE]
+> **Este paso es OPCIONAL.** Es para quien terminó antes de tiempo. Si el grupo va justo, quien imparte puede indicar que se salte y pasar al Ejercicio 2. No afecta a nada de lo que viene después.
 
 Ahora te toca a ti. Usa lo aprendido para que Copilot construya la funcionalidad completa de rentas.
 
@@ -844,13 +1015,17 @@ funcionalidad de rentas de Contoso Biker:
    /api/estadisticas.
 ```
 
-> 💡 **Observa el poder de `#codebase`:** Copilot analiza los archivos que ya escribiste y genera código **consistente** con ellos — mismo estilo de servicio, misma forma de devolver errores, misma documentación. Compara el resultado con lo que habrías escrito tú.
+> [!TIP]
+> **Observa el poder de `#codebase`:** Copilot analiza los archivos que ya escribiste y genera código **consistente** con ellos — mismo estilo de servicio, misma forma de devolver errores, misma documentación. Compara el resultado con lo que habrías escrito tú.
 
+> [!TIP]
 > 🧠 **Reflexión:** el prompt anterior es largo. ¿Eso es malo? No. Lo largo no es el problema; lo **vago** sí. Cada línea de ese prompt es una decisión de negocio que solo tú podías tomar.
 
 ---
 
-### 🛠️ Solución de problemas del Ejercicio 1
+<details>
+<summary><b>🛠️ Solución de problemas Ejercicio 1</b> — despliega si algo no funciona</summary>
+
 
 | Problema | Solución |
 |----------|----------|
@@ -864,13 +1039,17 @@ funcionalidad de rentas de Contoso Biker:
 | La validación no rechaza datos inválidos | Falta `builder.Services.AddValidation()` en `Program.cs` |
 | Copilot genera el código en inglés | Añade al prompt: *"Sigue las instrucciones de `.github/copilot-instructions.md`"* |
 
+</details>
+
 ---
 
 ## 🔬 Ejercicio 2: Frontend e integración (30 min)
 
-> ⚠️ **Requisito previo:** la API del Ejercicio 1 debe estar funcionando.
+> [!WARNING]
+> **Requisito previo:** la API del Ejercicio 1 debe estar funcionando.
 
-> 📝 **Enfoque deliberadamente simple:** el frontend es **un solo archivo HTML** en `wwwroot/index.html`, con Bootstrap 5 por CDN y JavaScript vanilla usando `fetch()`. **No hay React, ni Vue, ni npm, ni build de frontend.** Todo vive en un archivo y ASP.NET Core lo sirve directamente.
+> [!NOTE]
+> **Enfoque deliberadamente simple:** el frontend es **un solo archivo HTML** en `wwwroot/index.html`, con Bootstrap 5 por CDN y JavaScript vanilla usando `fetch()`. **No hay React, ni Vue, ni npm, ni build de frontend.** Todo vive en un archivo y ASP.NET Core lo sirve directamente.
 
 ### Objetivos
 
@@ -883,9 +1062,10 @@ funcionalidad de rentas de Contoso Biker:
 
 ### Paso 2.1 · La página principal
 
-> 💡 **Nota:** todo el frontend vive en `ContosoBiker.Api/wwwroot/index.html`. ASP.NET Core lo sirve en `/` gracias a `UseDefaultFiles()` + `UseStaticFiles()`, que configuraste en el Paso 1.6. Como la página y la API comparten origen, `fetch('/api/...')` funciona sin configurar CORS.
+> [!TIP]
+> **Todo el frontend vive** en `ContosoBiker.Api/wwwroot/index.html`. ASP.NET Core lo sirve en `/` gracias a `UseDefaultFiles()` + `UseStaticFiles()`, que configuraste en el Paso 1.6. Como la página y la API comparten origen, `fetch('/api/...')` funciona sin configurar CORS.
 
-🤖 **PROMPT en modo Agent:**
+🤖 **PROMPT en rol Agent:**
 
 ```
 Crea ContosoBiker.Api/wwwroot/index.html: el panel de administración de
@@ -929,13 +1109,14 @@ Requisitos:
 Los nombres de funciones y variables van en español.
 ```
 
+> [!NOTE]
 > 🎓 **Concepto — el punto 7 es el que separa un demo de una app.** Le estás pidiendo a Copilot que maneje **tres formas distintas de respuesta** de tu API: sin cuerpo (204), errores de validación (`ProblemDetails`) y errores de negocio (`{ mensaje }`). Copilot no lo habría deducido: tú conoces el contrato porque lo diseñaste en el Ejercicio 1.
 
 ---
 
 ### Paso 2.2 · La sección de inventario
 
-🤖 **PROMPT en modo Agent:**
+🤖 **PROMPT en rol Agent:**
 
 ```
 #file:ContosoBiker.Api/wwwroot/index.html
@@ -967,15 +1148,17 @@ mismo patrón de JavaScript que ya usa la sección de Clientes.
    en paralelo con Promise.all y construye un índice id → nombre.
 ```
 
-> 💡 **Observa:** al pasar `#file:` y decir "el mismo patrón que ya usa la sección de Clientes", Copilot mantiene la coherencia del código. No mezcla estilos ni reinventa el manejo de errores que ya escribió.
+> [!TIP]
+> **Observa:** al pasar `#file:` y decir "el mismo patrón que ya usa la sección de Clientes", Copilot mantiene la coherencia del código. No mezcla estilos ni reinventa el manejo de errores que ya escribió.
 
 ---
 
 ### Paso 2.3 · Verificar el pipeline de archivos estáticos
 
-> 📝 Este paso puede que ya esté resuelto si el Paso 1.6 salió bien. Compruébalo en treinta segundos.
+> [!NOTE]
+> Este paso puede que ya esté resuelto si el Paso 1.6 salió bien. Compruébalo en treinta segundos.
 
-🤖 **PROMPT en modo Ask:**
+🤖 **PROMPT en rol Ask** *(o Plan, si Ask no aparece)*:
 
 ```
 #file:ContosoBiker.Api/Program.cs
@@ -987,7 +1170,7 @@ y si están en el orden correcto. Explica qué hace cada uno.
 
 Si falta algo:
 
-🤖 **PROMPT en modo Agent:**
+🤖 **PROMPT en rol Agent:**
 
 ```
 Añade a Program.cs, antes de mapear los endpoints de la API, las llamadas
@@ -995,6 +1178,7 @@ UseDefaultFiles() y UseStaticFiles() en ese orden, para servir
 wwwroot/index.html en la raíz. No modifiques los endpoints existentes.
 ```
 
+> [!NOTE]
 > 🎓 **Concepto — por qué hacen falta los dos.** Es el error más común al servir archivos estáticos en ASP.NET Core moderno:
 >
 > | Método | Qué hace realmente |
@@ -1009,7 +1193,7 @@ wwwroot/index.html en la raíz. No modifiques los endpoints existentes.
 
 ### Paso 2.4 · Ejecutar y probar la integración
 
-🤖 **PROMPT en modo Agent:**
+🤖 **PROMPT en rol Agent:**
 
 ```
 Ejecuta la aplicación de Contoso Biker con el perfil http.
@@ -1038,13 +1222,15 @@ dotnet run --launch-profile http
 | ☐ | Al eliminar un cliente, sus bicicletas quedan "disponible" y sin cliente |
 | ☐ | `http://localhost:5080/scalar` sigue funcionando |
 
+> [!IMPORTANT]
 > 🌟 **Momento wow:** el punto de "al eliminar un cliente, sus bicicletas quedan disponibles" atraviesa **las tres capas** que construiste: el JavaScript llama al endpoint, el endpoint invoca `LiberarDeCliente`, y el servicio actualiza el inventario. Y lo escribiste todo con prompts.
 
 ---
 
 ### Paso 2.5 · Entender el código con `/explain`
 
-> 💡 **Concepto:** Copilot genera código rápido. `/explain` es lo que evita que ese código se convierta en una caja negra en tu repositorio.
+> [!NOTE]
+> **Concepto:** Copilot genera código rápido. `/explain` es lo que evita que ese código se convierta en una caja negra en tu repositorio.
 
 📍 **Instrucciones:**
 
@@ -1068,7 +1254,9 @@ dotnet run --launch-profile http
 
 ---
 
-### 🛠️ Solución de problemas del Ejercicio 2
+<details>
+<summary><b>🛠️ Solución de problemas Ejercicio 2</b> — despliega si algo no funciona</summary>
+
 
 | Problema | Solución |
 |----------|----------|
@@ -1081,12 +1269,16 @@ dotnet run --launch-profile http
 | Los cambios en el HTML no se reflejan | Recarga forzada con `Ctrl+F5`, o reinicia `dotnet run` |
 | El desplegable de clientes sale vacío | Se llena al entrar en la pestaña Bicicletas; comprueba que `GET /api/clientes` responde |
 
+</details>
+
 ---
 
 ## 🔬 Ejercicio 3: Pruebas y refactoring (25 min)
 
-> ⚠️ **Requisito previo:** el Ejercicio 1, con la API funcionando. El frontend no hace falta.
+> [!WARNING]
+> **Requisito previo:** el Ejercicio 1, con la API funcionando. El frontend no hace falta.
 
+> [!NOTE]
 > 🎓 **Para quien imparte:** si vas justo de tiempo, prioriza los Pasos 3.1 a 3.4 (generar y ejecutar pruebas). Los Pasos 3.5 y 3.6 son valiosos pero prescindibles.
 
 ### Objetivos
@@ -1100,7 +1292,8 @@ dotnet run --launch-profile http
 
 ### Paso 3.1 · Pruebas unitarias con `/tests`
 
-> 💡 **Comando especial:** `/tests` genera pruebas para el código que tengas seleccionado.
+> [!TIP]
+> **Comando especial:** `/tests` genera pruebas para el código que tengas seleccionado.
 
 📍 **Cómo usarlo:**
 
@@ -1134,13 +1327,14 @@ Requisitos:
   pruebas sean independientes y puedan ejecutarse en cualquier orden
 ```
 
+> [!NOTE]
 > 🎓 **Concepto — la última línea es la importante.** El servicio guarda los datos en memoria. Si todas las pruebas compartieran una sola instancia, la que elimina un cliente rompería a la que cuenta cuántos hay, y el resultado dependería del orden de ejecución. Crear una instancia por prueba elimina el problema de raíz. **Esto es exactamente el tipo de detalle que Copilot no adivina y tú sí sabes.**
 
 ---
 
 ### Paso 3.2 · Pruebas del inventario
 
-🤖 **PROMPT en modo Agent:**
+🤖 **PROMPT en rol Agent:**
 
 ```
 #file:ContosoBiker.Tests/ClienteServicioTests.cs
@@ -1161,7 +1355,8 @@ pruebas unitarias de BicicletaServicio:
 Cada prueba crea su propia instancia del servicio.
 ```
 
-> 💡 **Observa el `[Theory]`:** es la forma de xUnit de ejecutar la misma prueba con distintos datos. Si Copilot generó tres pruebas casi idénticas en vez de un `[Theory]`, pídeselo: *"unifica esas tres pruebas en un [Theory] con [InlineData]"*. Es un buen momento para hablar de duplicación en el código de pruebas.
+> [!TIP]
+> **Observa el `[Theory]`:** es la forma de xUnit de ejecutar la misma prueba con distintos datos. Si Copilot generó tres pruebas casi idénticas en vez de un `[Theory]`, pídeselo: *"unifica esas tres pruebas en un [Theory] con [InlineData]"*. Es un buen momento para hablar de duplicación en el código de pruebas.
 
 ---
 
@@ -1169,7 +1364,7 @@ Cada prueba crea su propia instancia del servicio.
 
 Estas pruebas no llaman a los servicios: **levantan la aplicación completa en memoria y le hacen peticiones HTTP reales**.
 
-🤖 **PROMPT en modo Agent:**
+🤖 **PROMPT en rol Agent:**
 
 ```
 #codebase
@@ -1206,8 +1401,10 @@ Usa System.Net.Http.Json (GetFromJsonAsync, PostAsJsonAsync, PutAsJsonAsync)
 y nombres de prueba descriptivos en español.
 ```
 
-> ⚠️ **Si la compilación falla diciendo que no encuentra `Program`:** revisa que `ContosoBiker.Tests.csproj` use `<Project Sdk="Microsoft.NET.Sdk.Web">` (Paso 1.3) y que tenga referencia al proyecto de la API.
+> [!WARNING]
+> **Si la compilación falla diciendo que no encuentra `Program`:** revisa que `ContosoBiker.Tests.csproj` use `<Project Sdk="Microsoft.NET.Sdk.Web">` (Paso 1.3) y que tenga referencia al proyecto de la API.
 
+> [!NOTE]
 > 🎓 **Concepto — algo que cambió y confunde a mucha gente.** En .NET 9 y anteriores había que añadir esta línea al final de `Program.cs` para que las pruebas pudieran referenciar la clase:
 >
 > ```csharp
@@ -1216,13 +1413,14 @@ y nombres de prueba descriptivos en español.
 >
 > **En .NET 10 un generador de código la emite automáticamente.** Es más: si la escribes a mano, un analizador te avisará de que la quites. Si Copilot te la sugiere —porque aprendió de miles de ejemplos escritos para versiones anteriores— **es un caso perfecto para practicar el juicio crítico: rechaza la sugerencia.**
 
+> [!TIP]
 > 🧠 **Reflexión para el grupo:** esto ilustra el límite real de Copilot. No "sabe" qué versión usas; predice lo más probable según lo que ha visto. Tu trabajo es saber cuándo lo más probable ya no es lo correcto.
 
 ---
 
 ### Paso 3.4 · Ejecutar las pruebas
 
-🤖 **PROMPT en modo Agent:**
+🤖 **PROMPT en rol Agent:**
 
 ```
 Ejecuta todas las pruebas de la solución de Contoso Biker y muéstrame el
@@ -1244,13 +1442,15 @@ dotnet test
 
 Ejecuta `dotnet test` **dos veces seguidas**. Si el número de pruebas que pasan cambia entre ejecuciones, tienes pruebas que dependen del orden — vuelve al Paso 3.1 y revisa que cada una cree su propia instancia.
 
-> 💡 **Tip:** para ver el nombre de cada prueba, usa `dotnet test -v normal`. Para ejecutar solo un grupo: `dotnet test --filter "FullyQualifiedName~ClienteServicio"`.
+> [!TIP]
+> **Para ver el nombre de cada prueba**, usa `dotnet test -v normal`. Para ejecutar solo un grupo: `dotnet test --filter "FullyQualifiedName~ClienteServicio"`.
 
 ---
 
 ### Paso 3.5 · Refactoring con `/explain` y `/fix` *(si hay tiempo)*
 
-> 💡 **Concepto:** hasta ahora usamos Copilot para **crear**. Ahora lo usamos para **mejorar**.
+> [!NOTE]
+> **Concepto:** hasta ahora usamos Copilot para **crear**. Ahora lo usamos para **mejorar**.
 
 📍 **Ejercicio:**
 
@@ -1283,8 +1483,10 @@ Y comprueba que no rompiste nada:
 Ejecuta dotnet test y confírmame que todas las pruebas siguen pasando.
 ```
 
+> [!IMPORTANT]
 > 🌟 **Momento wow:** la pregunta 5 tiene una respuesta real e incómoda. `Dictionary<TKey, TValue>` **no es seguro para acceso concurrente**, y el contador `_siguienteId++` tampoco es atómico. En un taller no importa; en producción sería un error serio. Copilot suele detectarlo y proponer `ConcurrentDictionary` o `Interlocked.Increment`. **Esa es la clase de revisión que cuesta cara si la haces tarde.**
 
+> [!IMPORTANT]
 > 🧭 **Disciplina:** nunca apliques un `/fix` sin ejecutar las pruebas después. El ciclo correcto es **explicar → corregir → probar**, siempre en ese orden.
 
 ---
@@ -1307,11 +1509,14 @@ Ejecuta dotnet test y confírmame que todas las pruebas siguen pasando.
 - <example> con una línea de uso
 ```
 
-> 💡 **Por qué importa más de lo que parece:** los comentarios XML no solo documentan para las personas. Alimentan IntelliSense, pueden incorporarse al documento OpenAPI y **se convierten en contexto para el propio Copilot** en futuras sesiones. Documentar bien hoy hace que Copilot acierte más mañana.
+> [!TIP]
+> **Por qué importa más de lo que parece:** los comentarios XML no solo documentan para las personas. Alimentan IntelliSense, pueden incorporarse al documento OpenAPI y **se convierten en contexto para el propio Copilot** en futuras sesiones. Documentar bien hoy hace que Copilot acierte más mañana.
 
 ---
 
-### 🛠️ Solución de problemas del Ejercicio 3
+<details>
+<summary><b>🛠️ Solución de problemas Ejercicio 3</b> — despliega si algo no funciona</summary>
+
 
 | Problema | Solución |
 |----------|----------|
@@ -1323,13 +1528,16 @@ Ejecuta dotnet test y confírmame que todas las pruebas siguen pasando.
 | `dotnet test` no encuentra pruebas | Ejecútalo desde la carpeta de la solución y confirma que existe `Microsoft.NET.Test.Sdk` |
 | Un aviso pide quitar `public partial class Program` | Hazle caso: en .NET 10 sobra |
 | `/tests` genera pruebas incompletas | Selecciona menos código o enumera los escenarios explícitamente en el prompt |
-| `/fix` no modifica nada | Cambia a modo Agent: en modo Ask no puede tocar archivos |
+| `/fix` no modifica nada | Cambia al rol **Agent**: en **Ask** no puede tocar archivos |
+
+</details>
 
 ---
 
 ## 🤖 Ejercicio 4: Creación de agentes (35 min)
 
-> ⚠️ **Requisito previo:** tener el proyecto de los Ejercicios 1 a 3. Si te quedaste atrás, no importa: este ejercicio funciona igual con lo que tengas.
+> [!WARNING]
+> **Requisito previo:** tener el proyecto de los Ejercicios 1 a 3. Si te quedaste atrás, no importa: este ejercicio funciona igual con lo que tengas.
 
 Hasta aquí has usado a Copilot **tal como viene**. En este ejercicio vas a **moldearlo**: definir cómo piensa, qué reglas sigue, qué herramientas puede tocar y qué papel juega en tu equipo.
 
@@ -1351,27 +1559,31 @@ Esta es la parte que convierte a Copilot de "un autocompletado muy bueno" en **i
 
 Antes de crear nada, ubica las piezas. Todas conviven y **se acumulan**.
 
-```
-                    ┌────────────────────────────────────┐
-     Más amplio     │  1. copilot-instructions.md        │  Reglas para TODO el repo
-          ▲         │     .github/copilot-instructions.md│
-          │         └────────────────────────────────────┘
-          │         ┌────────────────────────────────────┐
-          │         │  2. *.instructions.md              │  Reglas por tipo de archivo
-          │         │     .github/instructions/          │  (applyTo: '**/*.cs')
-          │         └────────────────────────────────────┘
-          │         ┌────────────────────────────────────┐
-          │         │  3. AGENTS.md                      │  Reglas compartidas entre
-          │         │     raíz del repositorio           │  distintas herramientas de IA
-          │         └────────────────────────────────────┘
-          │         ┌────────────────────────────────────┐
-          │         │  4. *.agent.md                     │  Un "personaje" con rol,
-          │         │     .github/agents/                │  herramientas y modelo propios
-          │         └────────────────────────────────────┘
-          ▼         ┌────────────────────────────────────┐
-     Más específico │  5. MCP servers                    │  Herramientas NUEVAS que
-                    │     .vscode/mcp.json               │  Copilot no tenía
-                    └────────────────────────────────────┘
+```mermaid
+flowchart TB
+    N1["<b>1 · copilot-instructions.md</b><br/><code>.github/copilot-instructions.md</code><br/><i>Reglas para TODO el repositorio</i>"]
+    N2["<b>2 · *.instructions.md</b><br/><code>.github/instructions/</code><br/><i>Reglas por tipo de archivo — applyTo</i>"]
+    N3["<b>3 · AGENTS.md</b><br/><code>raíz del repositorio</code><br/><i>Reglas compartidas entre herramientas de IA</i>"]
+    N4["<b>4 · *.agent.md</b><br/><code>.github/agents/</code><br/><i>Un rol con herramientas y modelo propios</i>"]
+    N5["<b>5 · Servidores MCP</b><br/><code>.vscode/mcp.json</code><br/><i>Herramientas NUEVAS que Copilot no tenía</i>"]
+
+    A(["🔭 Más amplio"]) --- N1
+    N1 --- N2 --- N3 --- N4 --- N5
+    N5 --- B(["🎯 Más específico"])
+
+    classDef nivel1 fill:#D8F3DC,stroke:#40916C,stroke-width:2px,color:#1B4332
+    classDef nivel2 fill:#B7E4C7,stroke:#40916C,stroke-width:2px,color:#1B4332
+    classDef nivel3 fill:#95D5B2,stroke:#2D6A4F,stroke-width:2px,color:#1B4332
+    classDef nivel4 fill:#74C69D,stroke:#1B4332,stroke-width:3px,color:#1B4332
+    classDef nivel5 fill:#52B788,stroke:#1B4332,stroke-width:2px,color:#1B4332
+    classDef eje fill:#F8F9FA,stroke:#ADB5BD,stroke-width:1px,color:#495057
+
+    class N1 nivel1
+    class N2 nivel2
+    class N3 nivel3
+    class N4 nivel4
+    class N5 nivel5
+    class A,B eje
 ```
 
 | Nivel | Archivo | Cuándo usarlo |
@@ -1382,7 +1594,8 @@ Antes de crear nada, ubica las piezas. Todas conviven y **se acumulan**.
 | **4. Agentes personalizados** | `.github/agents/*.agent.md` | Un rol concreto: revisor, documentador, arquitecto… |
 | **5. Servidores MCP** | `.vscode/mcp.json` | Conectar Copilot a sistemas externos: bases de datos, APIs, navegador |
 
-> ⚠️ **Si vienes de material anterior:** los **"custom chat modes"** (`.chatmode.md`) pasaron a llamarse **"custom agents"** (`.agent.md`). Es el mismo concepto con nombre nuevo. Si tienes archivos `.chatmode.md`, basta con renombrarlos a `.agent.md` y moverlos a `.github/agents/`.
+> [!WARNING]
+> **Si vienes de material anterior:** los **"custom chat modes"** (`.chatmode.md`) pasaron a llamarse **"custom agents"** (`.agent.md`). Es el mismo concepto con nombre nuevo. Si tienes archivos `.chatmode.md`, basta con renombrarlos a `.agent.md` y moverlos a `.github/agents/`.
 
 ---
 
@@ -1392,7 +1605,7 @@ El `copilot-instructions.md` del Paso 1.2 aplica a todo. Pero hay reglas que sol
 
 Para eso existen los archivos `.instructions.md` con la propiedad **`applyTo`**: un patrón glob que decide a qué archivos se adjuntan **automáticamente**.
 
-🤖 **PROMPT en modo Agent:**
+🤖 **PROMPT en rol Agent:**
 
 ````
 Crea el archivo .github/instructions/pruebas.instructions.md con este contenido
@@ -1447,7 +1660,7 @@ applyTo: '**/wwwroot/**/*.html'
 - Usa rutas relativas (`/api/...`): la página y la API comparten origen.
 ````
 
-🧪 **Comprueba que funciona.** Abre cualquier archivo de `ContosoBiker.Tests` y pide algo en modo Agent:
+🧪 **Comprueba que funciona.** Abre cualquier archivo de `ContosoBiker.Tests` y pide algo con el rol Agent:
 
 ```
 Añade una prueba que verifique que POST /api/bicicletas con un precio negativo
@@ -1456,7 +1669,8 @@ devuelve 400.
 
 Fíjate en el resultado: debería nombrar la prueba en español con el formato indicado, no incluir los comentarios `// Arrange`, y crear su propia fábrica. **No se lo pediste en este prompt** — vino del archivo `pruebas.instructions.md`.
 
-> 💡 **Los tres campos del encabezado:**
+> [!TIP]
+> **Los tres campos del encabezado:**
 >
 > | Campo | Para qué sirve |
 > |-------|----------------|
@@ -1466,7 +1680,8 @@ Fíjate en el resultado: debería nombrar la prueba en español con el formato i
 >
 > Si omites `description` y `applyTo`, el archivo solo se usa cuando lo adjuntas a mano.
 
-> ⚠️ **Límite importante:** las instrucciones personalizadas afectan al **chat**, no al autocompletado en línea mientras escribes en el editor.
+> [!WARNING]
+> **Límite importante:** las instrucciones personalizadas afectan al **chat**, no al autocompletado en línea mientras escribes en el editor.
 
 ---
 
@@ -1474,7 +1689,7 @@ Fíjate en el resultado: debería nombrar la prueba en español con el formato i
 
 `AGENTS.md` es un formato **abierto y compartido** entre distintos asistentes de IA. No es específico de Copilot. La idea: escribes las reglas del proyecto una vez, en la raíz del repositorio, y cualquier herramienta compatible las respeta.
 
-🤖 **PROMPT en modo Agent:**
+🤖 **PROMPT en rol Agent:**
 
 ````
 Crea el archivo AGENTS.md en la raíz del repositorio:
@@ -1512,7 +1727,8 @@ La aplicación queda en http://localhost:5080 y la documentación en /scalar.
 - Después de cualquier cambio de código, ejecuta `dotnet test`.
 ````
 
-> 💡 **`copilot-instructions.md` o `AGENTS.md`, ¿cuál uso?** Puedes tener los dos y se complementan. En la práctica: `copilot-instructions.md` para reglas de estilo específicas de Copilot; `AGENTS.md` para el conocimiento del proyecto que cualquier agente necesita — cómo se compila, cómo se prueba, qué no se debe tocar. `AGENTS.md` además lo lee el agente en la nube de GitHub (Paso 4.7).
+> [!TIP]
+> **`copilot-instructions.md` o `AGENTS.md`, ¿cuál uso?** Puedes tener los dos y se complementan. En la práctica: `copilot-instructions.md` para reglas de estilo específicas de Copilot; `AGENTS.md` para el conocimiento del proyecto que cualquier agente necesita — cómo se compila, cómo se prueba, qué no se debe tocar. `AGENTS.md` además lo lee el agente en la nube de GitHub (Paso 4.7).
 
 ---
 
@@ -1543,6 +1759,7 @@ Se guardan en `.github/agents/` con extensión `.agent.md`.
 | `handoffs` | Botones de acción sugerida al terminar una respuesta |
 | `user-invocable` | `false` para agentes que solo se usan como subagentes |
 
+> [!NOTE]
 > 🎓 **Por qué `tools` es el campo más importante.** Un agente sin `tools` puede hacer **cualquier cosa**: editar archivos, ejecutar comandos, borrar. Un agente revisor que solo puede **leer** no puede romper nada aunque se equivoque. Restringir herramientas no es burocracia: es **diseño de seguridad**.
 
 ---
@@ -1551,7 +1768,7 @@ Se guardan en `.github/agents/` con extensión `.agent.md`.
 
 Vamos a crear un agente que revise código de la API contra las reglas de Contoso Biker **sin poder modificar nada**.
 
-🤖 **PROMPT en modo Agent:**
+🤖 **PROMPT en rol Agent:**
 
 ````
 Crea el archivo .github/agents/revisor-api.agent.md con este contenido exacto:
@@ -1613,7 +1830,8 @@ Si no encuentras ningún problema, dilo explícitamente en lugar de inventar
 hallazgos menores para rellenar.
 ````
 
-> 💡 **Atajo:** también puedes crear agentes sin escribir el archivo a mano. Pulsa `Ctrl+Shift+P` → **Chat: New Custom Agent**, o escribe `/create-agent` en el chat y describe lo que quieres. Prueba los dos caminos y quédate con el que prefieras.
+> [!TIP]
+> **Atajo:** también puedes crear agentes sin escribir el archivo a mano. Pulsa `Ctrl+Shift+P` → **Chat: New Custom Agent**, o escribe `/create-agent` en el chat y describe lo que quieres. Prueba los dos caminos y quédate con el que prefieras.
 
 ---
 
@@ -1647,6 +1865,7 @@ Corrige el primer hallazgo de tu tabla.
 
 Te dirá que no puede modificar archivos. **Ese es exactamente el comportamiento que diseñaste.**
 
+> [!IMPORTANT]
 > 🌟 **Momento wow:** acabas de crear un rol reutilizable. Cualquier persona que clone este repositorio tiene ese revisor disponible al instante, con los mismos criterios. **Las convenciones de tu equipo dejaron de vivir en un wiki que nadie lee y pasaron a ser ejecutables.**
 
 ---
@@ -1655,7 +1874,7 @@ Te dirá que no puede modificar archivos. **Ese es exactamente el comportamiento
 
 Un agente por rol. Vamos por el segundo, este sí con permiso de edición.
 
-🤖 **PROMPT en modo Agent:**
+🤖 **PROMPT en rol Agent:**
 
 ````
 Crea el archivo .github/agents/documentador.agent.md:
@@ -1700,6 +1919,7 @@ Documenta ContosoBiker.Api/Servicios/BicicletaServicio.cs
 
 Después revisa el diff. ¿Respetó la regla de no tocar la lógica?
 
+> [!TIP]
 > 🧠 **Pregunta para el grupo:** ¿por qué el Documentador sí tiene `edit` y el Revisor no? ¿Qué pasaría si le diéramos `edit` al Revisor? Discútanlo: es una decisión de diseño real que van a tomar en sus equipos.
 
 ---
@@ -1708,7 +1928,7 @@ Después revisa el diff. ¿Respetó la regla de no tocar la lógica?
 
 Un agente puede delegar en otros mediante el campo **`agents`**. Esto permite dividir un trabajo grande en especialistas.
 
-🤖 **PROMPT en modo Agent:**
+🤖 **PROMPT en rol Agent:**
 
 ````
 Crea el archivo .github/agents/auditor.agent.md:
@@ -1753,10 +1973,12 @@ Audita la funcionalidad completa de bicicletas.
 
 Verás en el chat cómo el auditor **invoca a los otros dos agentes** y espera sus resultados antes de redactar el informe.
 
-> ⚠️ **Dos requisitos que se olvidan siempre:**
+> [!WARNING]
+> **Dos requisitos que se olvidan siempre:**
 > 1. Para que un agente pueda delegar, la herramienta **`agent` debe estar en su lista `tools`**. Si no, el campo `agents` se ignora en silencio.
 > 2. Los nombres en `agents` deben coincidir **exactamente** con el campo `name` de los otros agentes, respetando mayúsculas y acentos.
 
+> [!NOTE]
 > 🎓 **Concepto — por qué dividir en varios agentes.** Cada agente empieza con contexto limpio y una sola responsabilidad. Un agente que "lo hace todo" acaba con instrucciones contradictorias y resultados peores. Es el mismo principio de responsabilidad única que aplicas a tus clases.
 
 ---
@@ -1767,7 +1989,7 @@ Un agente solo puede usar las herramientas que existen. **MCP (Model Context Pro
 
 La configuración vive en `.vscode/mcp.json`:
 
-🤖 **PROMPT en modo Agent:**
+🤖 **PROMPT en rol Agent:**
 
 ````
 Crea el archivo .vscode/mcp.json con este contenido:
@@ -1790,7 +2012,7 @@ Crea el archivo .vscode/mcp.json con este contenido:
 | Paleta de comandos | `Ctrl+Shift+P` → **MCP: Add Server** |
 | A mano | Editar `.vscode/mcp.json` |
 
-🧪 **Pruébalo.** En modo Agent, con el servidor de GitHub configurado:
+🧪 **Pruébalo.** Con el rol Agent y el servidor de GitHub configurado:
 
 ```
 Busca en el repositorio dotnet/aspnetcore las incidencias abiertas
@@ -1808,9 +2030,11 @@ tools: ['search/codebase', 'github/*']
 
 > El formato `<servidor>/*` incluye todas las herramientas de ese servidor MCP.
 
-> 🛡️ **Seguridad, en serio.** Un servidor MCP local **ejecuta código en tu máquina**. Añade solo servidores de origen confiable. Y nunca escribas claves de API directamente en `mcp.json`: usa variables de entrada o un archivo de entorno.
+> [!CAUTION]
+> **Seguridad, en serio.** Un servidor MCP local **ejecuta código en tu máquina**. Añade solo servidores de origen confiable. Y nunca escribas claves de API directamente en `mcp.json`: usa variables de entrada o un archivo de entorno.
 
-> 💡 **Nota práctica:** un archivo `.mcp.json` en la raíz del repositorio (con la clave `mcpServers` en vez de `servers`) es el formato portable, que funciona también fuera de VS Code. Úsalo si quieres compartir la configuración con el resto del equipo independientemente de su editor.
+> [!TIP]
+> **Nota práctica:** un archivo `.mcp.json` en la raíz del repositorio (con la clave `mcpServers` en vez de `servers`) es el formato portable, que funciona también fuera de VS Code. Úsalo si quieres compartir la configuración con el resto del equipo independientemente de su editor.
 
 ---
 
@@ -1857,9 +2081,11 @@ Aceptación:
 - `dotnet test` pasa en verde
 ```
 
-> ⚠️ **El detalle que más frustra a la gente:** cuando asignas una incidencia, el agente recibe el **título, la descripción y los comentarios que existan en ese momento**. **No lee comentarios que añadas después.** Si necesitas darle más información, escríbela como comentario **en el pull request** que abra, no en la incidencia.
+> [!WARNING]
+> **El detalle que más frustra a la gente:** cuando asignas una incidencia, el agente recibe el **título, la descripción y los comentarios que existan en ese momento**. **No lee comentarios que añadas después.** Si necesitas darle más información, escríbela como comentario **en el pull request** que abra, no en la incidencia.
 
-> 💡 El agente en la nube también lee tu `.github/copilot-instructions.md`, tus `.github/instructions/*.instructions.md` y tu `AGENTS.md`. **Todo el trabajo de los pasos 4.1 y 4.2 se aplica también aquí.** Por eso vale la pena hacerlo bien.
+> [!TIP]
+> El agente en la nube también lee tu `.github/copilot-instructions.md`, tus `.github/instructions/*.instructions.md` y tu `AGENTS.md`. **Todo el trabajo de los pasos 4.1 y 4.2 se aplica también aquí.** Por eso vale la pena hacerlo bien.
 
 ---
 
@@ -1867,7 +2093,7 @@ Aceptación:
 
 El agente en la nube arranca en un contenedor Linux limpio. Si tu proyecto necesita algo instalado antes —como el SDK de .NET 10— se lo dices con un flujo de trabajo especial.
 
-🤖 **PROMPT en modo Agent:**
+🤖 **PROMPT en rol Agent:**
 
 ````
 Crea el archivo .github/workflows/copilot-setup-steps.yml:
@@ -1901,15 +2127,19 @@ jobs:
         run: dotnet restore
 ````
 
-> ⚠️ **Dos reglas estrictas:**
+> [!WARNING]
+> **Dos reglas estrictas:**
 > 1. El trabajo **tiene que llamarse `copilot-setup-steps`**. Con cualquier otro nombre, Copilot lo ignora.
 > 2. El archivo **debe estar en la rama por defecto** para que surta efecto.
 
-> 💡 Puedes validarlo manualmente desde la pestaña **Actions** del repositorio antes de asignar ninguna incidencia.
+> [!TIP]
+> Puedes validarlo manualmente desde la pestaña **Actions** del repositorio antes de asignar ninguna incidencia.
 
 ---
 
-### 🛠️ Solución de problemas del Ejercicio 4
+<details>
+<summary><b>🛠️ Solución de problemas Ejercicio 4</b> — despliega si algo no funciona</summary>
+
 
 | Problema | Solución |
 |----------|----------|
@@ -1924,6 +2154,8 @@ jobs:
 | No puedo asignar una incidencia a Copilot | Necesitas permiso de escritura y que el agente en la nube esté habilitado en el repositorio |
 | `copilot-setup-steps.yml` se ignora | El trabajo debe llamarse exactamente así y el archivo debe estar en la rama por defecto |
 | Tengo archivos `.chatmode.md` antiguos | Renómbralos a `.agent.md` y muévelos a `.github/agents/` |
+
+</details>
 
 ---
 
@@ -1940,11 +2172,34 @@ jobs:
 | Conectar Copilot a un sistema externo | Un servidor MCP en `.vscode/mcp.json` |
 | Delegar una tarea completa y recibir un PR | Asignar la incidencia a Copilot en GitHub |
 
+> [!IMPORTANT]
 > 🌟 **La idea que cierra el taller:** los agentes no son "prompts guardados". Son **la forma de codificar el criterio de tu equipo** para que se aplique igual a todo el mundo, todos los días, sin depender de que alguien se acuerde de la convención.
 
 ---
 
 ## 📖 Referencia rápida
+
+### Controles de la sesión de chat
+
+| Control | Qué decide | Valor recomendado en el taller |
+|---------|------------|-------------------------------|
+| 🎯 **Session Target** | Dónde corre la sesión | **Local** o **Copilot** |
+| 🤖 **Agent** | Qué rol adopta | **Agent** (y **Ask**/**Plan** para explorar) |
+| 🧠 **Language model** | Con qué modelo razona | **Auto** |
+| 🔐 **Permissions** | Qué requiere tu confirmación | **Manual permissions** |
+| 📂 **Code isolation** | Dónde se escriben los cambios | **Carpeta** actual |
+
+### Roles del agente
+
+| Rol | Edita | Ejecuta | Confirma | Ideal para |
+|-----|:-----:|:-------:|:--------:|------------|
+| 💬 **Ask** | ❌ | ❌ | — | Preguntar y aprender |
+| 📋 **Plan** | ⏸️ | ⏸️ | ✅ Siempre | Tareas complejas |
+| 🤖 **Agent** | ✅ | ✅ | ⚙️ Según permisos | Implementar |
+| 🚀 **Autopilot** | ✅ | ✅ | ❌ Nunca | Delegar (⚠️ con cuidado) |
+
+> [!TIP]
+> Si un rol no aparece en la lista, cambia el **Session Target**: los roles disponibles dependen de él.
 
 ### Referencias de contexto
 
@@ -1958,6 +2213,7 @@ jobs:
 | `#usages` | Dónde se usa un símbolo |
 | `#terminalLastCommand` | La salida del último comando |
 
+> [!NOTE]
 > `@workspace` pertenece a versiones anteriores. Hoy su equivalente es `#codebase`.
 
 ### Comandos de chat
@@ -1968,11 +2224,13 @@ jobs:
 | `/fix` | Proponer y aplicar una corrección |
 | `/tests` | Generar pruebas |
 | `/doc` | Generar documentación (chat en línea del editor) |
-| `/plan` | Investigar y proponer un plan |
+| `/plan` | Cambiar al rol Plan y proponer un plan |
+| `/rubber-duck` | Segunda opinión de solo lectura sobre un plan o código |
 | `/new` | Crear la estructura de un proyecto |
 | `/agents` | Configurar agentes |
 | `/instructions` | Configurar instrucciones |
 | `/create-agent` | Generar un agente nuevo |
+| `/compact` | Compactar el contexto de la conversación |
 | `/clear` | Empezar una conversación nueva |
 | `/models` | Abrir el selector de modelo |
 | `/help` | Ver comandos y agentes disponibles |
@@ -2060,6 +2318,7 @@ Tranquilidad: el valor de este taller está en **experimentar con Copilot**, no 
 | Copilot me generó algo distinto a mi compañero | **Es normal y esperado.** Compárenlos: entender por qué difieren enseña más que el código en sí |
 | Voy muy adelantado | Prueba el Paso 1.8 (rentas), crea un tercer agente propio, o conecta un servidor MCP distinto |
 
+> [!NOTE]
 > 🎓 **Recomendación para quien imparte:** mantén una rama `solucion` en el repositorio del taller con el código completo de referencia. Así quien se quede atrás puede descargar lo que le falta y reincorporarse al grupo sin perderse el resto.
 
 ---
@@ -2146,7 +2405,8 @@ Hasta .NET 8, las plantillas de Web API incluían Swashbuckle, que generaba tant
 
 Así que hoy eliges tú la capa visual. Scalar es moderna, se integra en una línea y funciona bien con OpenAPI 3.1. Swagger UI y ReDoc siguen siendo alternativas válidas.
 
-> ⚠️ Por buena práctica de seguridad, **estas interfaces solo deben exponerse en desarrollo**. Por eso en el taller van dentro del `if (app.Environment.IsDevelopment())`.
+> [!WARNING]
+> Por buena práctica de seguridad, **estas interfaces solo deben exponerse en desarrollo**. Por eso en el taller van dentro del `if (app.Environment.IsDevelopment())`.
 
 ### ¿Copilot genera código distinto para cada persona?
 
@@ -2167,9 +2427,32 @@ Sí, y es **intencional**. Copilot considera tu contexto: los archivos que tiene
 
 Un caso real de este taller: Copilot suele sugerir `public partial class Program { }` en `Program.cs` porque lo ha visto miles de veces en ejemplos de .NET 6 a 9. En .NET 10 **sobra**. Detectar eso es exactamente la habilidad que este taller quiere entrenar.
 
+### ¿Por qué no me aparece el modo "Ask"?
+
+Porque **los roles disponibles dependen del Session Target que tengas seleccionado**, no son una lista fija:
+
+| Session Target | Roles que suele ofrecer |
+|----------------|-------------------------|
+| **Local** | Ask · Agent · Plan |
+| **Copilot** (Agent Host) | Agent · Plan · **Autopilot** |
+
+**Ask no fue eliminado**, simplemente no lo ofrece el target **Copilot**. Tienes tres salidas:
+
+1. Cambia el **Session Target** a **Local** y ya aparecerá **Ask**.
+2. Usa **Plan** 📋, que también investiga y responde sin escribir código.
+3. Usa **Agent** y empieza el prompt con *"Solo respóndeme, no crees ni modifiques archivos todavía."*
+
+### ¿Qué es "Autopilot" y debo usarlo en el taller?
+
+Autopilot es un rol que trabaja de forma autónoma hasta dar la tarea por terminada: **auto-aprueba todas las herramientas**, reintenta cuando hay errores y responde solo a las preguntas que lo bloquearían.
+
+**Durante el taller: no lo uses.** El valor pedagógico está en *ver* lo que Copilot propone antes de aceptarlo. Autopilot se salta exactamente esa parte.
+
+Es útil después, en tareas largas, bien acotadas y en un entorno donde ya confías en el resultado.
+
 ### ¿Mi interfaz de Copilot se ve distinta a la del taller?
 
-Es muy probable, y no es un problema. Copilot evoluciona rápido: los modos, los íconos y la ubicación de los selectores cambian entre versiones. Los **conceptos** de este material —modos, referencias de contexto, instrucciones, agentes, MCP— son estables. Si algo no lo encuentras, consulta la [documentación oficial de VS Code](https://code.visualstudio.com/docs/copilot/overview) o pregunta a quien imparte.
+Es muy probable, y no es un problema. Copilot evoluciona rápido: los nombres de los roles, los íconos y la ubicación de los selectores cambian entre versiones. Los **conceptos** de este material —roles, permisos, referencias de contexto, instrucciones, agentes, MCP— son estables. Si algo no lo encuentras, consulta la [documentación oficial](https://code.visualstudio.com/docs/agents/run/agent-harnesses) o pregunta a quien imparte.
 
 ### ¿Cuál es la diferencia entre un "chat mode" y un "agente personalizado"?
 
@@ -2252,7 +2535,10 @@ Esta versión reescribe el contenido para **C# y ASP.NET Core**, cambia el domin
 
 Todos los comandos, rutas, snippets y comportamientos descritos en los Ejercicios 1 a 3 fueron **ejecutados y verificados** contra el SDK de .NET `10.0.401`: la solución compila, la aplicación arranca en el puerto 5080, `/`, `/scalar` y los endpoints responden correctamente, y la batería de pruebas pasa completa.
 
-El contenido del Ejercicio 4 está basado en la documentación oficial vigente de VS Code y GitHub. Ten presente que **la interfaz y la nomenclatura de Copilot evolucionan rápido**: si algo no coincide con lo que ves, el concepto sigue siendo válido pero conviene contrastar con la documentación enlazada.
+Los roles del agente (Ask · Plan · Agent · **Autopilot**), los cinco controles de la sesión de chat y el contenido del Ejercicio 4 están contrastados con la documentación oficial vigente de VS Code y GitHub.
+
+> [!NOTE]
+> 🔄 **La interfaz y la nomenclatura de Copilot evolucionan muy rápido.** Este material usa la terminología de *agent roles* y *Session Target*. Si lo que ves no coincide, el concepto sigue siendo válido: contrasta con la [documentación enlazada](https://code.visualstudio.com/docs/agents/run/agent-harnesses) y avisa para actualizar la guía.
 
 ---
 
